@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/runImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="50dp"
+                android:src="@drawable/user_running" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_margin="30dp">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EEEEEE"
+                    android:textColor="#3A4750"
+                    android:text="현재 위치는"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#3A4750"
+                    android:text="강릉원주대학교 원주캠퍼스 W6"
+                    android:textSize="20sp"
+                    android:background="#EEEEEE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:background="#EEEEEE"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/imageView6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/bluetooth" />
+
+                    <TextView
+                        android:id="@+id/blueText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:textColor="#3A4750"
+                        android:text="블루투스를 켜세요." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/imageView7"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/internet" />
+
+                    <TextView
+                        android:id="@+id/internetText"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:background="#EEEEEE"
+                        android:padding="10dp"
+                        android:textColor="#3A4750"
+                        android:text="인터넷을 연결하세요."
+
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

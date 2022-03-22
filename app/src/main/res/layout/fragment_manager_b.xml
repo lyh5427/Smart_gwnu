@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager_b">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:id="@+id/boardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:text="공지 사항" />
+
+            <Button
+                android:id="@+id/boardcreat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textSize="30dp"
+                android:layout_margin="1dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext5"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext6"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext7"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext8"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext9"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80dp"
+                                android:padding="10dp"
+                                android:src="@drawable/gwnu_logo" />
+
+                            <TextView
+                                android:id="@+id/mtitle10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="공지사항 타이틀"
+                                android:textColor="#3A4750"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mtext10"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:text="공지사항 컨텐츠" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
