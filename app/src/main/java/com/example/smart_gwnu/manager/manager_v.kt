@@ -1,19 +1,16 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.manager
 
-import android.app.Application
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.FragmentActivity
-import kotlinx.android.synthetic.main.activity_manager_login.*
-import kotlinx.android.synthetic.main.fragment_manager_h.*
+import com.example.smart_gwnu.restful.A
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.R
+import com.example.smart_gwnu.restful.R_ManagerVisit
 import kotlinx.android.synthetic.main.fragment_manager_v.*
 import kotlinx.android.synthetic.main.record_text.view.*
 import retrofit2.Call

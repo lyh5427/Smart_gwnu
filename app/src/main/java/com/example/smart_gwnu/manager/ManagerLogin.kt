@@ -1,11 +1,13 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.manager
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.smart_gwnu.*
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.restful.R_UserLogin
+import com.example.smart_gwnu.restful.UserLogin
 import kotlinx.android.synthetic.main.activity_manager_login.*
 import retrofit2.Call
 import retrofit2.Callback

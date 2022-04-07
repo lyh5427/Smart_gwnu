@@ -1,4 +1,4 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.user
 
 import android.os.Bundle
 import android.util.Log
@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import kotlinx.android.synthetic.main.fragment_user_set.*
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.R
+import com.example.smart_gwnu.restful.R_userSet
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

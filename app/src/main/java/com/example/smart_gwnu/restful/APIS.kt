@@ -1,13 +1,11 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.restful
 
-import com.google.android.gms.common.internal.safeparcel.SafeParcelable
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
-import java.io.StringBufferInputStream
 
 interface APIS {
 
@@ -175,7 +173,6 @@ interface APIS {
 
             return Retrofit.Builder()
                     .baseUrl(BASE_URL)
-                    //.client(client)
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build()
                     .create(APIS::class.java)

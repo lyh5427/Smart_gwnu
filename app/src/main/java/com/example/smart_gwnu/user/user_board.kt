@@ -1,4 +1,4 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.user
 
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.R
+import com.example.smart_gwnu.restful.notice
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -35,10 +38,14 @@ class user_board : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         bheader = arguments?.getString("mheader").toString()
         val root = inflater.inflate(R.layout.fragment_user_board, container, false)
-        var titleList = arrayListOf(R.id.mtitle1, R.id.mtitle2, R.id.mtitle3, R.id.mtitle4, R.id.mtitle5
-            , R.id.mtitle6, R.id.mtitle7, R.id.mtitle8, R.id.mtitle9, R.id.mtitle10)
-        var textList = arrayListOf(R.id.mtext1, R.id.mtext2, R.id.mtext3, R.id.mtext4, R.id.mtext5
-            , R.id.mtext6, R.id.mtext7, R.id.mtext8, R.id.mtext9, R.id.mtext10)
+        var titleList = arrayListOf(
+            R.id.mtitle1, R.id.mtitle2, R.id.mtitle3, R.id.mtitle4, R.id.mtitle5
+            , R.id.mtitle6, R.id.mtitle7, R.id.mtitle8, R.id.mtitle9, R.id.mtitle10
+        )
+        var textList = arrayListOf(
+            R.id.mtext1, R.id.mtext2, R.id.mtext3, R.id.mtext4, R.id.mtext5
+            , R.id.mtext6, R.id.mtext7, R.id.mtext8, R.id.mtext9, R.id.mtext10
+        )
 
 
 

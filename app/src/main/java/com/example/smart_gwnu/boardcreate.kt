@@ -2,14 +2,13 @@ package com.example.smart_gwnu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.LocaleList
 import android.util.Log
-import android.view.View
 import kotlinx.android.synthetic.main.activity_boardcreate.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import android.widget.*
+import com.example.smart_gwnu.restful.*
 
 class boardcreate : AppCompatActivity() {
     var api = APIS.create()

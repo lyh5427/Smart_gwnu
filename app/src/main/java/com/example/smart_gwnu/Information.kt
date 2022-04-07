@@ -3,6 +3,8 @@ package com.example.smart_gwnu
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.restful.R_noticeInfo
 import kotlinx.android.synthetic.main.activity_information.*
 import retrofit2.Call
 import retrofit2.Callback

@@ -1,7 +1,6 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.manager
 
 import android.graphics.Color
-import android.icu.util.LocaleData
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -12,8 +11,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import com.example.smart_gwnu.*
+import com.example.smart_gwnu.restful.A
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.restful.graph
+import com.example.smart_gwnu.restful.post_Graph
 import com.github.mikephil.charting.animation.Easing
-import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.*
@@ -26,15 +29,12 @@ import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import kotlinx.android.synthetic.main.fragment_manager_h.*
 import org.eazegraph.lib.charts.BarChart
 import org.eazegraph.lib.models.BarModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.time.LocalDate
-import java.time.Month
-import java.time.Year
 
 class manager_h : Fragment(), OnMapReadyCallback{
 

@@ -1,4 +1,4 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.user
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,13 +7,12 @@ import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.TelephonyManager
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
-import kotlinx.android.synthetic.main.activity_boardcreate.*
+import com.example.smart_gwnu.*
+import com.example.smart_gwnu.restful.*
 import kotlinx.android.synthetic.main.activity_join_page.*
-import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,7 +28,7 @@ class JoinPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_join_page)
 
-        fun largeDial( r : Response<Array<largeList>>, size : Int){
+        fun largeDial(r : Response<Array<largeList>>, size : Int){
             var i =0
             largelist = Array(r.body()!!.size, {"0"})
             while(i<size){
@@ -45,7 +44,7 @@ class JoinPage : AppCompatActivity() {
             dlg.show()
         }
 
-        fun mediumDial( r : Response<Array<mediumList>>, size : Int){
+        fun mediumDial(r : Response<Array<mediumList>>, size : Int){
             var i = 0
             mediumList = Array(r.body()!!.size, {"0"})
             while(i<r.body()!!.size){
@@ -61,7 +60,7 @@ class JoinPage : AppCompatActivity() {
             dlg.show()
         }
 
-        fun smallDial( r : Response<Array<smallList>>, size : Int){
+        fun smallDial(r : Response<Array<smallList>>, size : Int){
             var i = 0
             smallList = Array(r.body()!!.size, {"0"})
             while(i<r.body()!!.size){
@@ -139,6 +138,7 @@ class JoinPage : AppCompatActivity() {
                 val data = UserJoin(join_id_text.text.toString(), group1.text.toString(), group2.text.toString(), group3.text.toString() )
                 api.userJoin(data).enqueue(object : Callback<R_UserJoin>{
                     override fun onResponse(call: Call<R_UserJoin>, response: Response<R_UserJoin>) {
+
                         Toast.makeText(applicationContext, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show()
                         startActivity(intent)
                         finish()

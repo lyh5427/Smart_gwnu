@@ -1,9 +1,8 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.smart_gwnu
+package com.example.smart_gwnu.manager
 
 import android.content.Context
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
@@ -11,19 +10,9 @@ import android.location.Location
 import android.location.LocationManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.telephony.TelephonyManager
-import android.util.AttributeSet
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
 import androidx.core.app.ActivityCompat
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.MapView
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
+import com.example.smart_gwnu.R
 import kotlinx.android.synthetic.main.activity_manger_main.*
 import java.io.IOException
 import java.util.*
@@ -82,7 +71,8 @@ class mangerMain : AppCompatActivity(){
                 when(a.itemId){
                     R.id.menu_home ->{
                         getCurrentLoc()
-                        supportFragmentManager.beginTransaction().replace(R.id.frame, manager_h()
+                        supportFragmentManager.beginTransaction().replace(
+                            R.id.frame, manager_h()
                             .apply{arguments = Bundle().
                                 apply{
                                     putDouble("la", latitude!!)
@@ -92,7 +82,8 @@ class mangerMain : AppCompatActivity(){
                             }).commit()
                     }
                     R.id.menu_board ->{
-                        supportFragmentManager.beginTransaction().replace(R.id.frame, manager_b().
+                        supportFragmentManager.beginTransaction().replace(
+                            R.id.frame, manager_b().
                         apply{arguments = Bundle().
                         apply{
                             putString("mheader", mheader!!.toString())
@@ -100,7 +91,8 @@ class mangerMain : AppCompatActivity(){
                         }).commit()
                     }
                     R.id.menu_visit ->{
-                        supportFragmentManager.beginTransaction().replace(R.id.frame, manager_v().
+                        supportFragmentManager.beginTransaction().replace(
+                            R.id.frame, manager_v().
                         apply{arguments = Bundle().
                         apply{
                             putString("mheader", mheader!!.toString())
@@ -108,7 +100,8 @@ class mangerMain : AppCompatActivity(){
                         }).commit()
                     }
                     R.id.menu_set ->{
-                        supportFragmentManager.beginTransaction().replace(R.id.frame, manager_s().
+                        supportFragmentManager.beginTransaction().replace(
+                            R.id.frame, manager_s().
                         apply{arguments = Bundle().
                         apply{
                             putString("mheader", mheader!!.toString())
@@ -118,7 +111,7 @@ class mangerMain : AppCompatActivity(){
                 }
                 true
             }
-            selectedItemId=R.id.menu_home
+            selectedItemId= R.id.menu_home
         }
     }
 

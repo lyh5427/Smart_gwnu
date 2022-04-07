@@ -34,10 +34,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD9jnn0RyICNhoJFIgzU-Y3zZpNppZGa8w" />
 
-        <activity android:name=".mangerMain" />
-        <activity android:name=".JoinPage" />
-        <activity android:name=".ManagerLogin" />
-        <activity android:name=".UserMain" />
+        <activity android:name=".manager.mangerMain" />
+        <activity android:name=".user.JoinPage" />
+        <activity android:name=".manager.ManagerLogin" />
+        <activity android:name=".user.UserMain" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

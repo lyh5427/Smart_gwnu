@@ -1,12 +1,10 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.smart_gwnu
+package com.example.smart_gwnu.user
 
-import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
-import android.app.PendingIntent.FLAG_UPDATE_CURRENT
 import android.bluetooth.BluetoothAdapter
 import org.altbeacon.beacon.*
 import android.content.Context
@@ -19,24 +17,22 @@ import android.location.LocationManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.os.RemoteException
-import android.provider.Settings
-import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
+import com.example.smart_gwnu.restful.APIS
+import com.example.smart_gwnu.Information
+import com.example.smart_gwnu.R
+import com.example.smart_gwnu.restful.R_SvaeInfo
+import com.example.smart_gwnu.restful.Saveinfo
 import kotlinx.android.synthetic.main.activity_user_main.*
-import kotlinx.android.synthetic.main.fragment_user_home.*
-import org.altbeacon.beacon.*
 import java.io.IOException
-import java.net.CacheResponse
 import java.time.LocalDateTime
 import java.util.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
 
 class UserMain : AppCompatActivity(), BeaconConsumer {
     //블루투스 제어 변수
@@ -155,7 +151,8 @@ class UserMain : AppCompatActivity(), BeaconConsumer {
                 when (a.itemId) {
                     R.id.menu_home -> {
                         getCurrentLoc()
-                        supportFragmentManager.beginTransaction().replace(R.id.frame2, user_home()
+                        supportFragmentManager.beginTransaction().replace(
+                            R.id.frame2, user_home()
                             .apply{arguments = Bundle().
                             apply{
                                 putDouble("la", latitude!!)
@@ -166,7 +163,8 @@ class UserMain : AppCompatActivity(), BeaconConsumer {
                     }
                     R.id.menu_board -> {
                         supportFragmentManager.beginTransaction()
-                            .replace(R.id.frame2, user_board()
+                            .replace(
+                                R.id.frame2, user_board()
                                 .apply { arguments = Bundle().apply {
                                     putString("mheader", uheader!!)
                                 }
@@ -174,7 +172,8 @@ class UserMain : AppCompatActivity(), BeaconConsumer {
                     }
                     R.id.menu_visit -> {
                         supportFragmentManager.beginTransaction()
-                            .replace(R.id.frame2, user_visit()
+                            .replace(
+                                R.id.frame2, user_visit()
                                 .apply { arguments = Bundle().apply {
                                     putString("mheader", uheader!!)
                                 }
@@ -182,7 +181,8 @@ class UserMain : AppCompatActivity(), BeaconConsumer {
                     }
                     R.id.menu_set -> {
                         supportFragmentManager.beginTransaction()
-                            .replace(R.id.frame2, user_set()
+                            .replace(
+                                R.id.frame2, user_set()
                                 .apply { arguments = Bundle().apply {
                                     putString("mheader", uheader!!)
                                 }

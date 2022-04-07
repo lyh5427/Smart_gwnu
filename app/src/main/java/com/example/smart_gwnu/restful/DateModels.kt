@@ -1,8 +1,6 @@
-package com.example.smart_gwnu
+package com.example.smart_gwnu.restful
 
-import java.time.LocalDate
 import java.time.LocalDateTime
-import java.util.*
 import kotlin.collections.ArrayList
 
 
